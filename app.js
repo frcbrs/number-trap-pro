@@ -2,18 +2,19 @@
 const $=(s,ctx=document)=>ctx.querySelector(s);
 const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};
 let DATA=null, filter='Speciale', query='';
-function boldParagraph(text) {
-  const p = el('p');
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+// Consente di evidenziare parole in grassetto tramite **testo** nei paragrafi.
+// Tutto il resto viene aggiunto come testo, senza interpretare HTML.
+function boldParagraph(value) {
+  const paragraph = el('p');
+  const parts = String(value).split(/(\*\*[^*]+\*\*)/g);
   for (const part of parts) {
     if (part.startsWith('**') && part.endsWith('**')) {
-      p.append(el('strong', null, part.slice(2, -2)));
+      paragraph.append(el('strong', null, part.slice(2, -2)));
     } else {
-      p.append(document.createTextNode(part));
+      paragraph.append(document.createTextNode(part));
     }
   }
-
-  return p;
+  return paragraph;
 }
 function showRules(){const container=$('#rules-content');for(const s of DATA.sections){const art=el('article');art.id='regola-'+s.id;art.append(el('h3',null,s.title));for(const p of s.paragraphs)art.append(boldParagraph(p));container.append(art)}}
 function showClarifications(){const grid=$('#clarification-grid');DATA.clarifications.forEach((c,i)=>{const article=el('article','note-card');article.append(el('span','flag',String(i+1)),el('h3',null,c.title),el('p',null,c.text));grid.append(article)});const examples=$('#examples-grid');DATA.examples.forEach(c=>{const d=el('article','example');d.append(el('h4',null,c.title),el('p',null,c.body));examples.append(d)})}
