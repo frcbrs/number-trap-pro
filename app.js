@@ -2,7 +2,20 @@
 const $=(s,ctx=document)=>ctx.querySelector(s);
 const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x};
 let DATA=null, filter='Speciale', query='';
-function showRules(){const container=$('#rules-content');for(const s of DATA.sections){const art=el('article');art.id='regola-'+s.id;art.append(el('h3',null,s.title));for(const p of s.paragraphs)art.append(el('p',null,p));container.append(art)}}
+function boldParagraph(text) {
+  const p = el('p');
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  for (const part of parts) {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      p.append(el('strong', null, part.slice(2, -2)));
+    } else {
+      p.append(document.createTextNode(part));
+    }
+  }
+
+  return p;
+}
+function showRules(){const container=$('#rules-content');for(const s of DATA.sections){const art=el('article');art.id='regola-'+s.id;art.append(el('h3',null,s.title));for(const p of s.paragraphs)art.append(boldParagraph(p));container.append(art)}}
 function showClarifications(){const grid=$('#clarification-grid');DATA.clarifications.forEach((c,i)=>{const article=el('article','note-card');article.append(el('span','flag',String(i+1)),el('h3',null,c.title),el('p',null,c.text));grid.append(article)});const examples=$('#examples-grid');DATA.examples.forEach(c=>{const d=el('article','example');d.append(el('h4',null,c.title),el('p',null,c.body));examples.append(d)})}
 function openCard(c){const dlg=$('#card-dialog');$('#dialog-img').src=c.image;$('#dialog-img').alt='Carta originale '+c.name;$('#dialog-kicker').textContent=c.category.toUpperCase()+' • '+c.count+' NEL MAZZO';$('#dialog-title').textContent=c.name;$('#dialog-effect').textContent=c.effect;$('#dialog-description').textContent=c.details;dlg.showModal()}
 function renderCards(){const grid=$('#cards-grid');grid.replaceChildren();const cards=DATA.cards.filter(c=>(c.category===filter)&&(c.name+' '+c.effect+' '+c.details).toLowerCase().includes(query));$('#no-results').hidden=cards.length>0;for(const c of cards){const btn=el('button','card-button');btn.type='button';btn.setAttribute('aria-label','Apri scheda '+c.name);const img=el('img');img.src=c.image;img.alt='Carta '+c.name;img.loading='lazy';img.width=530;img.height=747;const foot=el('span','card-foot');foot.append(el('strong',null,c.name),el('span','qty','×'+c.count));btn.append(img,foot);btn.addEventListener('click',()=>openCard(c));grid.append(btn)}}
