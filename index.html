@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081247">
+  <meta name="description" content="Number Trap Pro — regolamento completo, carte speciali e chiarimenti. Designed by FRCBRS.">
+  <title>Number Trap Pro — Regolamento e carte</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="contenuti.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header"><div class="wrap header-inner">
+    <a class="brand" href="#inizio" aria-label="Number Trap Pro — Designed by FRCBRS"><img class="brand-icon" src="assets/favicon.svg" alt="" width="43" height="43"><span class="brand-copy"><span class="brand-name"><img class="brand-name-svg" src="assets/numbertrap-name.svg" alt="NUMBER TRAP PRO"></span><span class="brand-credit"><img class="brand-designed-svg" src="assets/designed-by.svg" alt="Designed by"><img class="frcbrs-logo" src="assets/frcbrs.svg" alt="FRCBRS"></span></span></a>
+    <nav aria-label="Navigazione principale">
+      <a href="#come-si-gioca">Il gioco</a><a href="#regolamento">Le regole</a><a href="#catalogo">Le carte</a><a href="#chiarimenti">Casi speciali</a>
+    </nav>
+    <a class="header-pdf" href="Number_Trap_Pro_Regolamento_Bozza_1.pdf" download aria-label="Scarica il regolamento PDF">Scarica PDF <span aria-hidden="true">↓</span></a>
+  </div></header>
+  <main id="contenuto">
+    <section class="hero" id="inizio"><div class="wrap hero-layout">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> ALLA SCOPERTA DELL’UNIVERSO</p>
+        <h1>Astronauti.<br><em class="hero-slogan">Pronti per il lancio?</em></h1>
+        <p class="hero-description">La sfida è appena cominciata. Gioca le tue carte, sfrutta gli effetti speciali ed elimina gli avversari. Solo uno conquisterà lo spazio!</p>
+        <div class="hero-buttons"><a class="btn primary" href="#regolamento">Scopri le regole <span>↗</span></a><a class="btn ghost" href="#catalogo">Esplora le carte <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>60</strong><span>carte totali</span></div><div><strong>15</strong><span>carte speciali</span></div><div><strong>5/6</strong><span>giocatori ideali</span></div></div>
+      </div>
+      <div class="hero-art"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="card-tilt"><img src="assets/carte/retro.webp" alt="Retro originale della carta Number Trap Pro, con astronauta e firma Designed by FRCBRS" width="750" height="1057"></div><div class="hero-glow"></div></div>
+    </div></section>
+    <section class="quick-section" id="come-si-gioca"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">IL GIOCO</p><h2>Come funziona il gameplay.</h2><p>Una panoramica rapida. Per i dettagli e le eccezioni, consultare il regolamento completo.</p></div>
+      <div class="quick-grid"><article class="quick-card"><div class="quick-num">1</div><h3>Setup della partita</h3><p>Mescola e distribuisci <b>5 carte</b> a ogni giocatore. Le restanti compongono il mazzo.</p></article>
+      <article class="quick-card"><div class="quick-num">2</div><h3>Gioca una carta</h3><p>Segui il turno, aggiungi il valore al totale o applica l’effetto speciale. Poi pesca per avere <b>5 carte</b>.</p></article>
+      <article class="quick-card"><div class="quick-num">3</div><h3>Non superare 50</h3><p>Se il totale supera <b>50</b> a causa della tua giocata, sei eliminato.</p></article>
+      <article class="quick-card"><div class="quick-num">4</div><h3>Resisti fino alla fine</h3><p>Usa le carte speciali per cambiare le sorti del gioco ed eliminare gli avversari. L’<b>ultimo</b> rimasto vince!</p></article></div>
+    </div></section>
+    <section class="section" id="regolamento"><div class="wrap">
+      <div class="section-heading split-heading"><div><p class="eyebrow">LE REGOLE</p><h2>Patti chiari, amicizia lunga.</h2><p>Il regolamento completo a disposizione degli astronauti, in versione web e PDF.</p></div><a class="btn rules-pdf" href="Number_Trap_Pro_Regolamento_Bozza_1.pdf" target="_blank" rel="noopener">Apri la versione PDF ↗</a></div>
+      <div class="rules-layout"><div class="rules-content" id="rules-content"></div></div>
+    </div></section>
+    <section class="section catalog-section" id="catalogo"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">LE CARTE</p><h2>Conosci ogni carta.</h2><p>Tocca una carta per leggere effetto, condizioni e chiarimenti.</p></div>
+      <div class="catalog-tools"><div class="filter-switch" aria-label="Filtra le carte"><button class="filter is-active" type="button" data-filter="Speciale" aria-pressed="true">Speciali <span>15</span></button><button class="filter" type="button" data-filter="Numerica" aria-pressed="false">Numeriche <span>10</span></button></div><label class="search-field"><span>⌕</span><input id="card-search" type="search" placeholder="Cerca una carta..." aria-label="Cerca una carta"></label></div>
+      <div id="cards-grid" class="cards-grid"></div><p id="no-results" class="no-results" hidden>Nessuna carta trovata. Prova un altro termine.</p>
+    </div></section>
+    <section class="section notes-section" id="chiarimenti"><div class="wrap">
+      <div class="section-heading"><p class="eyebrow">CASI SPECIALI</p><h2>Cosa succede se...</h2><p>Una raccolta di casistiche a disposizione degli astronauti per disciplinare le giocate concatenate.</p></div>
+      <div class="note-grid" id="clarification-grid"></div>
+      <h3 class="minor-heading">Esempi pratici</h3><div class="examples-grid" id="examples-grid"></div>
+    </div></section>
+    <section class="section extra-section" id="composizione"><div class="wrap extra-layout"><div class="extra-copy"><p class="eyebrow">IL MAZZO</p><h2>60 carte.<br>Un’unica missione.</h2><p>Disponibile nelle versioni Standard, con custodia in plastica gommata, e Deluxe, con custodia in alluminio con grafica in rilievo.</p></div><div class="extra-showcase"><figure class="deck-variant standard"><img src="assets/carte/retro.webp" alt="Versione Standard di Number Trap Pro, immagine provvisoria" loading="lazy"><figcaption><span class="variant-tag">STANDARD</span><strong>Custodia in plastica gommata</strong></figcaption></figure><figure class="deck-variant deluxe"><img src="assets/carte/retro.webp" alt="Versione Deluxe di Number Trap Pro, immagine provvisoria" loading="lazy"><figcaption><span class="variant-tag">DELUXE</span><strong>Custodia in alluminio con grafica in rilievo</strong></figcaption></figure></div></div></section>
+    <section class="section about-section" id="faq"><div class="wrap"><p class="eyebrow">FAQ</p><h2>Domande e risposte</h2><p class="draft-note">Questa è una bozza editoriale costruita sul regolamento originale e sui chiarimenti successivi. Prima della pubblicazione come regolamento ufficiale definitivo, ne verificheremo insieme la formulazione.</p></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner">
+    <a class="brand footer-brand" href="#inizio" aria-label="Number Trap Pro — Designed by FRCBRS, torna all’inizio"><img class="brand-icon" src="assets/favicon.svg" alt="" width="43" height="43"><span class="brand-copy"><span class="brand-name"><img class="brand-name-svg" src="assets/numbertrap-name.svg" alt="NUMBER TRAP PRO"></span><span class="brand-credit"><img class="brand-designed-svg" src="assets/designed-by.svg" alt="Designed by"><img class="frcbrs-logo" src="assets/frcbrs.svg" alt="FRCBRS"></span></span></a>
+    <p class="footer-copyright">Copyright © 2026 Number Trap Pro – Designed by FRCBRS. Tutti i diritti riservati.</p>
+    <a class="footer-top" href="#inizio" aria-label="Torna all’inizio della pagina">Torna su <span aria-hidden="true">↑</span></a>
+  </div></footer>
+  <dialog id="card-dialog" aria-labelledby="dialog-title"><button id="close-dialog" type="button" aria-label="Chiudi scheda" class="dialog-close">×</button><div class="dialog-layout"><img id="dialog-img" alt="" src="assets/carte/retro.webp"><div class="dialog-details"><p id="dialog-kicker" class="eyebrow"></p><h2 id="dialog-title"></h2><p class="dialog-label">EFFETTO</p><p id="dialog-effect"></p><p class="dialog-label">SPIEGAZIONE E CHIARIMENTI</p><p id="dialog-description"></p><button id="dialog-back" type="button" class="btn outline">← Torna alle carte</button></div></div></dialog>
+</body></html>
