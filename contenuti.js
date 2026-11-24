@@ -45,17 +45,16 @@ window.NUMBER_TRAP_DATA = {
         "Il totale numerico iniziale è 0 (zero) e non deve mai superare 50 (cinquanta).",
         "Le carte numeriche incrementano il totale del proprio valore, le carte speciali applicano le modifiche specificate nelle rispettive descrizioni.",
         "Se una giocata fa sì che il totale superi 50 (cinquanta), chi ha effettuato quella giocata viene immediatamente eliminato e le sue carte poste assieme a quelle già giocate.",
-        "Il nuovo totale si calcola con la formula: nuovo totale = (totale precedente + valore carta giocata) − 50. Per esempio, da 48 una carta 5 porta il totale a 53: il giocatore viene eliminato e il nuovo totale è 3.",
-        "Quando un giocatore dispone soltanto di carte numeriche che farebbero superare 50, è obbligato a giocare quella numericamente più alta ed è eliminato. La partita continua con gli astronauti rimasti.",
-        "L’eliminazione interrompe le azioni ancora da compiere da parte del giocatore eliminato, comprese eventuali ulteriori giocate o pescate. Gli effetti delle carte già attivate, come REVERSE o DOUBLE, rimangono invece validi."
+        "Il nuovo totale si calcola con la formula: **nuovo totale = (totale precedente + valore carta giocata) − 50**.",
+        "Qualora un giocatore disponesse soltanto di carte numeriche che ne comporterebbero l'elimiazione, lo stesso è obbligato a mostrarle tutte e a giocare quella numericamente più alta. La partita continua con gli astronauti rimasti e con il totale aggiornato.",
+        "L’eliminazione di un giocatore non interrompe gli effetti delle carte eventualmente già attivate, come ad esempio REVERSE o DOUBLE, che restano validi."
       ]
     },
     {
       "id": "mazzo",
       "title": "Esaurimento del mazzo",
       "paragraphs": [
-        "Quando il mazzo di pesca si esaurisce, la pila delle carte già giocate viene capovolta, senza mescolarla, per formare un nuovo mazzo di pesca.",
-        "L’operazione viene effettuata ogni volta che è necessaria, anche durante una concatenazione di carte speciali. Le carte appena giocate fanno parte della pila da capovolgere."
+        "Qualora le carte del mazzo vengano esaurite, o si stiano per esaurire, le carte che compongono il totale vengono capovolte, senza essere mescolate, e compongono il nuovo mazzo."
       ]
     },
     {
