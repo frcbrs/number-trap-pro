@@ -7,19 +7,26 @@ window.NUMBER_TRAP_DATA = {
   "intro": "Un gioco di carte per 2–8 astronauti: tieni il totale entro 50, sfrutta le carte speciali e rimani l’ultimo giocatore in partita.",
   "sections": [
     {
-      "id": "obiettivo",
-      "title": "Obiettivo e partecipanti",
+      "id": "scopo",
+      "title": "Scopo del gioco",
       "paragraphs": [
-        "Lo scopo di Number Trap Pro è rimanere l’ultimo “astronauta” in partita, eliminando gli avversari.",
-        "Si gioca da 2 a 8 persone. Il numero consigliato è 5–6; 3–4 è un numero adatto, 7 è possibile, 8 è al limite della giocabilità. Le partite in due sono consentite, ma meno consigliate."
+        "Lo scopo di Number Trap Pro è rimanere l’ultimo “astronauta” in partita, eliminando gli avversari."
       ]
     },
     {
-      "id": "preparazione",
-      "title": "Preparazione",
+      "id": "partecipanti",
+      "title": "Partecipanti",
       "paragraphs": [
-        "Il mazzo è composto da 60 carte: 40 numeriche (da 0 a 9) e 20 speciali. Si sceglie un mazziere, che mescola il mazzo e lo fa tagliare al giocatore alla sua sinistra.",
-        "Il mazziere distribuisce una carta alla volta, partendo dal giocatore alla propria destra e procedendo in senso antiorario, fino a consegnare cinque carte a ciascuno. Le rimanenti formano il mazzo di pesca, a faccia in giù, al centro del tavolo."
+        "Il numero consigliato è di 5/6 giocatori. Tuttavia, è possibile giocare da un minimo di 2 fino ad un massimo di 8 persone."
+      ]
+    },
+    {
+      "id": "setup",
+      "title": "Setup",
+      "paragraphs": [
+        "Il mazzo contiene 60 (sessanta) carte, suddivise tra numeri da 0 (zero) a 9 (nove) e carte speciali.",
+        "All’inizio di ogni partita viene stabilito, tramite accordo tra i giocatori, un mazziere, che ha il compito di mescolare il mazzo. Dopo aver fatto fare il taglio al giocatore alla sua sinistra, il mazziere distribuisce le carte una per giocatore iniziando dal giocatore alla sua destra e proseguendo in senso antiorario, fino a consegnare 5 (cinque) carte per ciascun giocatore.",
+        "Le restanti carte vanno poste a faccia in giù al centro del tavolo e compongono il mazzo da cui pescare."
       ]
     },
     {
@@ -33,10 +40,10 @@ window.NUMBER_TRAP_DATA = {
     },
     {
       "id": "totale",
-      "title": "Totale, soglia di 50 ed eliminazione",
+      "title": "Il totale e l'eliminazione",
       "paragraphs": [
         "Il totale parte da 0 e non deve mai superare 50. Le carte numeriche aggiungono al totale il proprio valore; le carte speciali applicano le modifiche specificate nelle rispettive descrizioni.",
-        "Se una giocata porta il totale oltre 50, chi ha effettuato quella giocata viene eliminato immediatamente. Il nuovo totale è: (totale precedente + incremento della carta) − 50. Per esempio, da 48 una carta 5 porta il totale a 53: il giocatore viene eliminato e il nuovo totale è 3.",
+        "Se una giocata porta il totale oltre 50, chi ha effettuato quella giocata viene eliminato immediatamente. Il nuovo totale è: **(totale precedente + valore carta giocata) − 50**.",
         "Quando un giocatore dispone soltanto di carte numeriche che farebbero superare 50, è obbligato a giocare quella numericamente più alta ed è eliminato. La partita continua con gli astronauti rimasti.",
         "L’eliminazione interrompe le azioni ancora da compiere da parte del giocatore eliminato, comprese eventuali ulteriori giocate o pescate. Gli effetti delle carte già attivate, come REVERSE o DOUBLE, rimangono invece validi."
       ]
