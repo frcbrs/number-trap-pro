@@ -8,35 +8,44 @@ window.NUMBER_TRAP_DATA = {
   "sections": [
     {
       "id": "obiettivo",
-      "title": "Obiettivo e partecipanti",
+      "title": "Scopo del gioco",
       "paragraphs": [
-        "Lo scopo di Number Trap Pro è rimanere l’ultimo “astronauta” in partita, eliminando gli avversari.",
-        "Si gioca da 2 a 8 persone. Il numero consigliato è 5–6; 3–4 è un numero adatto, 7 è possibile, 8 è al limite della giocabilità. Le partite in due sono consentite, ma meno consigliate."
+        "Rimanere l’ultimo “astronauta” in partita, eliminando gli avversari."
       ]
     },
     {
-      "id": "preparazione",
-      "title": "Preparazione",
+      "id": "partecipanti",
+      "title": "Partecipanti",
       "paragraphs": [
-        "Il mazzo è composto da 60 carte: 40 numeriche (da 0 a 9) e 20 speciali. Si sceglie un mazziere, che mescola il mazzo e lo fa tagliare al giocatore alla sua sinistra.",
-        "Il mazziere distribuisce una carta alla volta, partendo dal giocatore alla propria destra e procedendo in senso antiorario, fino a consegnare cinque carte a ciascuno. Le rimanenti formano il mazzo di pesca, a faccia in giù, al centro del tavolo."
+        "Il numero ideale è 5/6 giocatori. Tuttavia, è possibile giocare da un minimo di 2 fino a un massimo di 8 persone."
       ]
     },
     {
-      "id": "turno",
-      "title": "Come si svolge il turno",
+      "id": "setup",
+      "title": "Setup",
       "paragraphs": [
-        "Inizia il giocatore alla destra del mazziere. A turno si gioca una carta ponendola a faccia in su nella pila delle carte giocate, accanto al mazzo di pesca, e si applica l’effetto della carta sul totale o sul gioco.",
-        "Alla fine del proprio turno, chi è ancora in partita ripristina la mano a cinque carte. Di norma si pesca una carta; quando si sono giocate più carte dalla mano, si pesca quanto necessario per tornare a cinque. Gli effetti di TRAP e SHUFFLE possono richiedere il reintegro prima del termine del turno.",
+        "Il mazzo è composto da 60 (sessanta) carte, di cui 40 (quaranta) sono numeriche, da 0 a 9, e 20 (venti) speciali.",
+        "Si sceglie un mazziere, che mescola il mazzo e lo fa tagliare al giocatore alla sua sinistra. Dopodiché, il mazziere distribuisce le carte una per giocatore, iniziando da quello alla sua destra e procedendo in senso antiorario, fino a consegnare 5 (cinque) carte a ciascuno.",
+        "Le carte rimanenti devono essere poste a faccia in giù al centro del tavolo e compongono il mazzo da cui pescare.
+      ]
+    },
+    {
+      "id": "gameplay",
+      "title": "Gameplay",
+      "paragraphs": [
+        "Il giocatore alla destra del mazziere inizia la partita giocando una carta e, successivamente, pesca la carta in cima al mazzo, in modo tale da avere sempre 5 (cinque) carte in mano. Dopodiché il turno passa al giocatore successivo.",
+        "Le carte giocate vanno poste a faccia in su al centro del tavolo accanto al mazzo e compongono il totale.",
         "Il gioco procede inizialmente in senso antiorario, salvo modifiche introdotte dalle carte speciali."
       ]
     },
     {
       "id": "totale",
-      "title": "Totale, soglia di 50 ed eliminazione",
+      "title": "Il totale e l'eliminazione",
       "paragraphs": [
-        "Il totale parte da 0 e non deve mai superare 50. Le carte numeriche aggiungono al totale il proprio valore; le carte speciali applicano le modifiche specificate nelle rispettive descrizioni.",
-        "Se una giocata porta il totale oltre 50, chi ha effettuato quella giocata viene eliminato immediatamente. Il nuovo totale è: (totale precedente + incremento della carta) − 50. Per esempio, da 48 una carta 5 porta il totale a 53: il giocatore viene eliminato e il nuovo totale è 3.",
+        "Il totale numerico iniziale è 0 (zero) e non deve mai superare 50 (cinquanta).",
+        "Le carte numeriche incrementano il totale del proprio valore, le carte speciali applicano le modifiche specificate nelle rispettive descrizioni.",
+        "Se una giocata fa sì che il totale superi 50 (cinquanta), chi ha effettuato quella giocata viene immediatamente eliminato e le sue carte poste assieme a quelle già giocate.",
+        "Il nuovo totale si calcola con la formula: nuovo totale = (totale precedente + valore carta giocata) − 50. Per esempio, da 48 una carta 5 porta il totale a 53: il giocatore viene eliminato e il nuovo totale è 3.",
         "Quando un giocatore dispone soltanto di carte numeriche che farebbero superare 50, è obbligato a giocare quella numericamente più alta ed è eliminato. La partita continua con gli astronauti rimasti.",
         "L’eliminazione interrompe le azioni ancora da compiere da parte del giocatore eliminato, comprese eventuali ulteriori giocate o pescate. Gli effetti delle carte già attivate, come REVERSE o DOUBLE, rimangono invece validi."
       ]
