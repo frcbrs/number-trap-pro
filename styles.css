@@ -276,3 +276,29 @@
     transform: translateY(1px);
   }
 }
+
+
+/* FOOTER DEFINITIVO: copyright a sinistra,
+   pulsante Torna su a destra */
+
+.site-footer .footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-footer .footer-copyright {
+  flex: 1;
+  margin: 0;
+  text-align: left;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.site-footer .footer-top {
+  flex-shrink: 0;
+  margin-left: auto;
+  grid-column: auto;
+  grid-row: auto;
+}
