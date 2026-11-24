@@ -226,3 +226,53 @@
     font-size: clamp(33px, 9.2vw, 35px);
   }
 }
+
+
+
+
+/* RITOCCO MARCHIO HEADER */
+
+/* Desktop */
+@media (min-width: 721px) {
+  .site-header .brand .brand-name-svg {
+    height: 14px;
+  }
+
+  .site-header .brand .frcbrs-logo {
+    width: 52px;
+  }
+
+  .site-header .brand .brand-designed-svg {
+    transform: translateY(2px);
+  }
+}
+
+/* Smartphone */
+@media (max-width: 720px) {
+  .site-header .brand .brand-name-svg {
+    height: 12px;
+  }
+
+  .site-header .brand .frcbrs-logo {
+    width: 46px;
+  }
+
+  .site-header .brand .brand-designed-svg {
+    transform: translateY(1.5px);
+  }
+}
+
+/* Smartphone piccoli */
+@media (max-width: 380px) {
+  .site-header .brand .brand-name-svg {
+    height: 10px;
+  }
+
+  .site-header .brand .frcbrs-logo {
+    width: 40px;
+  }
+
+  .site-header .brand .brand-designed-svg {
+    transform: translateY(1px);
+  }
+}
