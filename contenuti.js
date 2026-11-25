@@ -30,38 +30,38 @@ window.NUMBER_TRAP_DATA = {
       ]
     },
     {
-      "id": "turno",
-      "title": "Come si svolge il turno",
+      "id": "gameplay",
+      "title": "Gameplay",
       "paragraphs": [
         "Inizia il giocatore alla destra del mazziere. A turno si gioca una carta ponendola a faccia in su nella pila delle carte giocate, accanto al mazzo di pesca, e si applica l’effetto della carta sul totale o sul gioco.",
-        "Alla fine del proprio turno, chi è ancora in partita ripristina la mano a cinque carte. Di norma si pesca una carta; quando si sono giocate più carte dalla mano, si pesca quanto necessario per tornare a cinque. Gli effetti di TRAP e SHUFFLE possono richiedere il reintegro prima del termine del turno.",
-        "Il gioco procede inizialmente in senso antiorario, salvo modifiche introdotte dalle carte speciali."
+        "Alla fine del proprio turno, il giocatore pesca tante carte quante ne servono per tornare ad averne 5 (cinque) in mano, di norma una ma talvolta due.",
+        "Inizialmente, il gioco procede in senso antiorario, fatte salve eventuali modifiche introdotte da alcune carte speciali."
       ]
     },
     {
       "id": "totale",
       "title": "Il totale e l'eliminazione",
       "paragraphs": [
-        "Il totale parte da 0 e non deve mai superare 50. Le carte numeriche aggiungono al totale il proprio valore; le carte speciali applicano le modifiche specificate nelle rispettive descrizioni.",
-        "Se una giocata porta il totale oltre 50, chi ha effettuato quella giocata viene eliminato immediatamente. Il nuovo totale è: **(totale precedente + valore carta giocata) − 50**.",
+        "Il totale iniziale è 0 (zero) e non deve mai superare 50 (cinquanta). Le carte numeriche incrementano il totale del rispettivo valore, le carte speciali applicano ciascuna il rispettivo effetto.",
+        "Se una giocata, effettuata per errore o per distrazione, incrementa il totale oltre il valore numerico 50 (cinquanta), chi ha effettuato quella giocata viene immediatamente eliminato.",
+        "Quando un giocatore dispone soltanto di carte numeriche che incrementerebbero il totale fino a superare 50 (cinquanta), ovvero quando non dispone di giocate legali, è obbligato a mostrare tutte le carte componenti la sua mano ed è eliminato. Le sue carte vanno poste nella pila delle carte, con in cima quella dal valore numerico più alto, che rappresenta la sua giocata effettiva (obbligata).",
+        "Il nuovo totale si calcola con la formula: **(totale precedente + valore carta giocata) − 50**.",
+        "A titolo d'esempio, se il totale è 47 (quarantasette) e il giocatore (A), di turno, dispone delle carte numeriche 4/5/6/7/8, lo stesso deve giocare la carta 8 e il nuovo totale diventa (47 + 8) - 50 = 5.",
         "Quando un giocatore dispone soltanto di carte numeriche che farebbero superare 50, è obbligato a giocare quella numericamente più alta ed è eliminato. La partita continua con gli astronauti rimasti.",
-        "L’eliminazione interrompe le azioni ancora da compiere da parte del giocatore eliminato, comprese eventuali ulteriori giocate o pescate. Gli effetti delle carte già attivate, come REVERSE o DOUBLE, rimangono invece validi."
       ]
     },
     {
       "id": "mazzo",
       "title": "Esaurimento del mazzo",
       "paragraphs": [
-        "Quando il mazzo di pesca si esaurisce, la pila delle carte già giocate viene capovolta, senza mescolarla, per formare un nuovo mazzo di pesca.",
-        "L’operazione viene effettuata ogni volta che è necessaria, anche durante una concatenazione di carte speciali. Le carte appena giocate fanno parte della pila da capovolgere."
+        "Quando il mazzo di pesca si esaurisce, o prima che si esaurisca, si capovolge la pila delle carte già giocate, senza mescolarla, per formare il nuovo mazzo di pesca.",
       ]
     },
     {
       "id": "numeriche",
       "title": "Carte numeriche",
       "paragraphs": [
-        "Le carte numeriche hanno sfondo blu e un valore da 0 a 9. Quando vengono giocate, incrementano il totale del proprio valore (la carta 0 non lo modifica).",
-        "Le quantità di ciascun valore sono riportate nella sezione “Composizione del mazzo”."
+        "Le carte numeriche hanno sfondo blu e un valore da 0 (zero) a 9 (nove). Quando giocate, incrementano il totale del proprio valore. La carta 0 (zero) non lo modifica.",
       ]
     }
   ],
