@@ -228,7 +228,7 @@ window.NUMBER_TRAP_DATA = {
       "name": "REVERSE",
       "count": 3,
       "category": "Speciale",
-      "effect": "Inverte il senso di gioco, senza modificare il totale.",
+      "effect": "Inverte il senso di gioco.",
       "details": "• Con due giocatori rimasti equivale a una carta 0.\n• Se viene giocata durante una DOUBLE, il cambio di direzione resta valido e si applica alla successione dei turni dopo il completamento dell’obbligo.\n• Due REVERSE nello stesso turno annullano reciprocamente l’inversione.",
       "image": "assets/carte/reverse.webp"
     },
@@ -265,7 +265,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 2,
       "category": "Speciale",
       "effect": "Sottrae 10 al totale.",
-      "details": "Può essere giocata soltanto se il totale è almeno 10. Se viene pescata da MYSTERY quando il totale è inferiore a 10, viene scartata senza effetto e si pesca di nuovo.",
+      "details": "• Può essere giocata soltanto se il totale è almeno 10.\n• Se viene pescata per effetto di una MYSTERY quando il totale è inferiore a 10, viene scartata come non utilizzabile.",
       "image": "assets/carte/minus-10.webp"
     },
     {
@@ -273,8 +273,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "DOUBLE SIMPLE",
       "count": 2,
       "category": "Speciale",
-      "effect": "Il totale non cambia; il prossimo giocatore deve giocare due carte.",
-      "details": "Le due carte vanno giocate dalla mano senza pescate di reintegro tra l’una e l’altra, salvo quelle indispensabili per risolvere TRAP o SHUFFLE. Al termine si torna a cinque carte. Una DOUBLE giocata tra le due carte trasferisce l’obbligo al prossimo giocatore effettivo; due DOUBLE nello stesso turno non obbligano a giocare quattro carte. MISSION TO THE MOON interrompe l’obbligo ancora da completare.",
+      "effect": "Il prossimo giocatore deve giocare due carte. Il totale resta invariato.",
+      "details": "• Di norma, il giocatore successivo (B) deve giocare entrambe le carte scegliendole dalla sua mano, senza pescate di reintegro tra la prima e la seconda.\n• Se una delle carte giocate è TRAP o SHUFFLE, l'effetto di quest'ultima viene applicato prima della rispettiva giocata.\n• Se una delle due carte giocate è di tipo DOUBLE (S, +1, +2), l'effetto di quest'ultima viene applicato al giocatore successivo.\n• Se entrambe le carte giocate sono di tipo DOUBLE (S, +1, +2) gli effetti vengono applicati sul totale ma non sul giocatore successivo, che deve giocare soltanto 2 (due) carte.\n• Se la prima carta giocata è MISSION TO THE MOON, quest'ultima interrompe l’obbligo residuo di giocare una seconda carta.\n• Se la prima carta giocata è LAST CALL, quest'ultima si attiva e, qualora il suo effetto non comporti l'eliminazione, la giocata della seconda carta residua deve essere effettuata.",
       "image": "assets/carte/double-simple.webp"
     },
     {
@@ -282,8 +282,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "DOUBLE +1",
       "count": 1,
       "category": "Speciale",
-      "effect": "Aumenta il totale di 1 e obbliga il prossimo giocatore a giocare due carte.",
-      "details": "Vale la regola generale delle DOUBLE: due giocate dalla mano, senza reintegro intermedio ordinario; gli obblighi di DOUBLE non si cumulano. Se il +1 fa superare 50, chi la gioca viene eliminato, ma l’obbligo già attivato resta valido.",
+      "effect": "Il totale aumenta di 1 (uno). Il prossimo giocatore deve giocare due carte.",
+      "details": "• Il funzionamento è analogo alla carta DOUBLE SIMPLE per quanto riguarda gli obblighi sul giocatore successivo.\n• Il totale viene incrementato immediatamente di 1 (uno), quindi se è già pari a 50 (cinquanta) chi gioca questa carta viene eliminato (eventualmente l’obbligo sul giocatore successivo resta valido).",
       "image": "assets/carte/double-plus-1.webp"
     },
     {
@@ -291,8 +291,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "DOUBLE +2",
       "count": 1,
       "category": "Speciale",
-      "effect": "Aumenta il totale di 2 e obbliga il prossimo giocatore a giocare due carte.",
-      "details": "Vale la regola generale delle DOUBLE. Se il +2 fa superare 50, chi la gioca viene eliminato, ma l’obbligo già attivato resta valido. Si applica anche quando DOUBLE +2 viene rivelata attraverso MYSTERY.",
+      "effect": "Il totale aumenta di 2 (due). Il prossimo giocatore deve giocare due carte.",
+      "details": "• Il funzionamento è analogo alla carta DOUBLE SIMPLE per quanto riguarda gli obblighi sul giocatore successivo.\n• Il totale viene incrementato immediatamente di 2 (due), quindi se è già maggiore o uguale a 49 (quarantanove) chi gioca questa carta viene eliminato (eventualmente l’obbligo sul giocatore successivo resta valido).",
       "image": "assets/carte/double-plus-2.webp"
     },
     {
@@ -301,7 +301,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 1,
       "category": "Speciale",
       "effect": "Sottrae 23 al totale.",
-      "details": "Può essere giocata soltanto quando il totale è almeno 23.",
+      "details": "Può essere giocata soltanto quando il totale è maggiore o uguale a 23 (ventitré).",
       "image": "assets/carte/cocoa-minus.webp"
     },
     {
@@ -318,8 +318,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "TEN PLUS-MINUS",
       "count": 1,
       "category": "Speciale",
-      "effect": "Permette di scegliere +10 oppure −10 al totale.",
-      "details": "La sottrazione di 10 è possibile soltanto quando il totale è almeno 10. La scelta spetta al giocatore che attiva la carta, anche se viene rivelata da MYSTERY o LAST CALL.",
+      "effect": "Incrementa o decrementa di 10 (dieci) il totale, a scelta del giocatore che la gioca.",
+      "details": "Il decremento è possibile soltanto quando il totale è maggiore o uguale a 10 (dieci).",
       "image": "assets/carte/ten-plus-minus.webp"
     },
     {
@@ -327,8 +327,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "I DECIDE WHAT’S NEXT",
       "count": 1,
       "category": "Speciale",
-      "effect": "Permette di scegliere il prossimo giocatore, il senso di gioco e un incremento da 0 a 5.",
-      "details": "È consentito scegliere sé stessi come prossimo giocatore. Non si può designare chi deve ancora saltare un turno per MISSION TO THE MOON. In una DOUBLE l’obbligo di due carte è rivolto al giocatore designato. Un successivo REVERSE cambia la direzione ma non annulla la scelta del prossimo giocatore.",
+      "effect": "Permette di scegliere il prossimo giocatore, il senso di gioco e un incremento da 0 (zero) a 5 (cinque).",
+      "details": "• È consentito scegliere sé stessi come giocatore successivo.\n• Non è consentito scegliere come giocatore successivo un astronauta che deve saltare un turno per l'effetto di MISSION TO THE MOON.\n• Qualora questa carta sia giocata come prima di una DOUBLE (S, +1, +2), un successivo REVERSE cambia il senso di gioco ma non annulla la scelta del prossimo giocatore.",
       "image": "assets/carte/i-decide.webp"
     },
     {
@@ -337,7 +337,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 1,
       "category": "Speciale",
       "effect": "Raccoglie, mescola e ridistribuisce le mani dei giocatori in partita.",
-      "details": "Prima della mescolata le mani di tutti i giocatori ancora in partita devono contenere cinque carte. Chi attiva SHUFFLE pesca quanto necessario; il giocatore alla sua sinistra taglia, quindi le carte sono ridistribuite una per volta a partire dal giocatore successivo nel senso corrente. Sono comprese le mani dei giocatori sulla Luna. Durante una DOUBLE, se SHUFFLE è la prima carta, la seconda si sceglie dalla nuova mano.",
+      "details": "• Prima della mescolata tutti i giocatori ancora in partita devono avere 5 (cinque) carte in mano.\n• Il giocatore che gioca questa carta pesca dapprima quanto necessario, poi raduna tutte le carte in mano agli avversari (comprese le sue) e le mescola. Dopodiché il giocatore alla sua sinistra effettuerà il taglio del mazzo e le carte verranno distribuite una per astronauta a partire dal giocatore successivo nel senso di gioco corrente.\n• Le carte in mano al giocatore temporaneamente fermo per effetto di MISSION TO THE MOON sono comprese.",
       "image": "assets/carte/shuffle.webp"
     },
     {
@@ -345,8 +345,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "MISSION TO THE MOON",
       "count": 1,
       "category": "Speciale",
-      "effect": "Fa saltare al giocatore il proprio turno successivo.",
-      "details": "La giocata corrente termina; il giocatore pesca fino a cinque carte. Se era soggetto all’obbligo di una DOUBLE, MISSION TO THE MOON prevale e interrompe le eventuali giocate ancora dovute, anche se rivelata da MYSTERY. Durante l’assenza, il giocatore viene saltato nella successione dei turni, ma le sue carte possono essere coinvolte da TRAP, SHUFFLE e LAST CALL.",
+      "effect": "Fa saltare al giocatore (A) il proprio turno successivo.",
+      "details": "• Il giocatore (A) che gioca questa carta prima pesca tante carte fino ad averne (cinque) in mano, dopodiché salterà il proprio turno successivo.\n• Se (A) era soggetto all’effetto di una DOUBLE (S, +1, +2), questa carta prevale e interrompe le eventuali giocate residue.",
       "image": "assets/carte/mission.webp"
     },
     {
@@ -354,8 +354,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "LAST CALL",
       "count": 1,
       "category": "Speciale",
-      "effect": "Permette di prelevare a caso una carta dalla mano di un avversario e giocarla subito.",
-      "details": "Si può usare soltanto con totale almeno 46. La carta prelevata produce il proprio effetto per il giocatore che ha attivato LAST CALL: è lui a scegliere quando la carta richiede decisioni. Le mani vengono riportate a cinque carte; se l’effetto impone uno scambio o una mescolata, il reintegro avviene prima. Il giocatore preso di mira può anche trovarsi sulla Luna. Se LAST CALL è la prima carta di una DOUBLE, dopo la risoluzione normalmente resta da giocare la seconda carta dalla propria mano.",
+      "effect": "Permette di prelevare a caso una carta dalla mano di un avversario e giocarla immediatamente.",
+      "details": "• Si può usare soltanto con totale maggiore o uguale a 46 (quarantasei).\n• La carta prelevata dalla mano di un avversario (B) si considera come giocata da (A), che ha giocato questa carta.\n• La carta può essere scelta anche dalla mano di un giocatore fermo temporaneamente per fetto di MISSION TO THE MOON.",
       "image": "assets/carte/last-call.webp"
     }
   ]
