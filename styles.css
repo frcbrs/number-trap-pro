@@ -426,3 +426,17 @@
     gap: 2px;
   }
 }
+
+
+/* Allineamento inferiore Designed by FRCBRS */
+.site-header .brand-credit {
+  transform: translateY(4px);
+}
+
+/* Adattamento smartphone */
+@media (max-width: 720px) {
+  .site-header .brand-credit {
+    transform: translateY(2px);
+  }
+}
+
