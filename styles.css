@@ -308,3 +308,121 @@
 #dialog-description {
   white-space: pre-line;
 }
+
+
+
+/* MARCHIO HEADER SU UNA SOLA RIGA */
+
+.site-header .brand-copy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.site-header .brand-credit {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+/* Designed by leggermente più piccolo */
+.site-header .brand .brand-designed-svg {
+  height: 8px;
+  width: auto;
+  transform: none;
+}
+
+/* FRCBRS proporzionalmente più piccolo */
+.site-header .brand .frcbrs-logo {
+  width: 42px;
+  height: auto;
+  max-height: none;
+  align-self: center;
+}
+
+/* TABLET */
+@media (max-width: 720px) {
+  .site-header .brand {
+    gap: 6px;
+  }
+
+  .site-header .brand-copy {
+    gap: 6px;
+  }
+
+  .site-header .brand .brand-name-svg {
+    height: 11px;
+  }
+
+  .site-header .brand .brand-designed-svg {
+    height: 6px;
+  }
+
+  .site-header .brand .frcbrs-logo {
+    width: 34px;
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 480px) {
+  .site-header .brand-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .site-header .brand .brand-name-svg {
+    height: 8.2px;
+  }
+
+  .site-header .brand .brand-designed-svg {
+    height: 4.5px;
+  }
+
+  .site-header .brand .frcbrs-logo {
+    width: 26px;
+  }
+
+  .site-header .brand-copy {
+    gap: 5px;
+  }
+
+  .site-header .brand-credit {
+    gap: 3px;
+  }
+}
+
+/* SMARTPHONE PICCOLI */
+@media (max-width: 380px) {
+  .site-header .brand {
+    gap: 4px;
+  }
+
+  .site-header .brand-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .site-header .brand .brand-name-svg {
+    height: 7.2px;
+  }
+
+  .site-header .brand .brand-designed-svg {
+    height: 3.8px;
+  }
+
+  .site-header .brand .frcbrs-logo {
+    width: 22px;
+  }
+
+  .site-header .brand-copy {
+    gap: 4px;
+  }
+
+  .site-header .brand-credit {
+    gap: 2px;
+  }
+}
