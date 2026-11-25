@@ -66,20 +66,20 @@ window.NUMBER_TRAP_DATA = {
   ],
   "clarifications": [
     {
-      "title": "Effetti concatenati e MYSTERY",
-      "text": "Ogni carta giocata attraverso un effetto viene attivata come una carta giocata dalla mano. MYSTERY può quindi rivelare un’altra MYSTERY o una carta speciale con effetto completo. Se una carta rivelata è inutilizzabile per i suoi requisiti, viene posta nella pila delle carte giocate senza effetto e MYSTERY fa pescare ancora. Le carte pescate e giocate direttamente non aumentano e non riducono le carte presenti nella mano."
+      "title": "MYSTERY concatenate",
+      "text": "Il giocatore (A) gioca una carta MYSTERY. Per effetto di questa carta pesca la prima carta del mazzo e la gioca immediatamente. A sua volta si svela una MYSTERY. Il suo effetto si applica, il giocatore (A) pesca di nuovo la prima carta del mazzo e la gioca immediatamente."
     },
     {
       "title": "DOUBLE: due carte, non quattro",
-      "text": "Chi subisce una DOUBLE deve giocare due carte dalla mano. Gli effetti delle carte vengono risolti nell’ordine in cui sono giocate. Se una delle due è a sua volta una DOUBLE, il prossimo giocatore effettivo dovrà giocare due carte: gli obblighi non si sommano, anche se nello stesso turno sono state giocate due DOUBLE. La seconda carta normalmente va scelta dalla mano senza reintegro intermedio."
+      "text": "Il giocatore (A) gioca una carta DOUBLE (S, +1, +2). Il giocatore successivo (B) deve giocare due carte. Se entrambe le carte giocate da (B) sono di tipo DOUBLE (S, +1, +2), il giocatore successivo (C) deve giocare soltanto 2 (due) carte, non 4 (quattro)."
     },
     {
-      "title": "Priorità di MISSION TO THE MOON",
-      "text": "MISSION TO THE MOON interrompe la parte ancora da completare di una DOUBLE, anche se viene attivata indirettamente attraverso MYSTERY. Chi la gioca ripristina la mano e salta il proprio turno successivo. La carta non cancella gli effetti già attivati in precedenza, per esempio una DOUBLE che obbligherà il giocatore successivo a giocare due carte."
+      "title": "La potenza di MTTM",
+      "text": "Se il giocatore (A) gioca la carta MISSION TO THE MOON come prima carta in risposta all'effetto di una DOUBLE (S, +1, +2), la seconda giocata non deve essere effettuata."
     },
     {
-      "title": "Rinforzi e reintegro a cinque carte",
-      "text": "Le pescate di reintegro sono sempre quelle necessarie a tornare a cinque carte in mano. Le carte pescate e immediatamente giocate con MYSTERY non devono essere reintegrate, perché non sono entrate nella mano. Per TRAP e SHUFFLE il ripristino delle mani a cinque avviene prima dello scambio o della mescolata, anche durante una DOUBLE."
+      "title": "Astronauta in missione",
+      "text": "Un giocatore (A) temporaneamente fermo per effetto della carta MISSION TO THE MOON non può essere scelto come giocatore successivo da chi gioca la carta I DECIDE WHAT’S NEXT e viene saltato nella normale successione dei turni. Risulta trasparente all'effetto di una DOUBLE (S, +1, +2), che passa oltre. Le carte di (A) rimangono però disponibili per giocate di tipo SHUFFLE, TRAP e LAST CALL."
     },
     {
       "title": "TRAP, SHUFFLE e cambio di mano durante DOUBLE",
@@ -94,39 +94,19 @@ window.NUMBER_TRAP_DATA = {
       "text": "REVERSE cambia il senso di gioco; due REVERSE giocati nello stesso turno si annullano. I DECIDE WHAT’S NEXT può designare un giocatore specifico e fissare la direzione: un successivo REVERSE cambia la direzione ma non sostituisce il giocatore già designato. Se quel giocatore è chi ha giocato I DECIDE e successivamente gioca MISSION TO THE MOON, il turno che si era attribuito viene saltato e si prosegue nella direzione scelta."
     },
     {
-      "title": "Giocatori sulla Luna",
-      "text": "Chi deve saltare il proprio prossimo turno per MISSION TO THE MOON non può essere scelto come prossimo giocatore da I DECIDE WHAT’S NEXT e viene saltato nella normale successione dei turni. Un obbligo DOUBLE destinato al prossimo giocatore effettivo passa oltre chi deve saltare il turno. Le carte di quest’ultimo rimangono però disponibili per SHUFFLE, TRAP e LAST CALL."
-    },
-    {
       "title": "Eliminazione durante una sequenza",
       "text": "Se il totale supera 50 durante una giocata multipla o una catena di effetti, il giocatore viene eliminato subito e non completa le azioni che gli restavano da svolgere. Le conseguenze di carte già giocate, come l’inversione di REVERSE o il vincolo di una DOUBLE, continuano ad applicarsi ai turni successivi."
     }
   ],
   "examples": [
     {
-      "title": "MYSTERY su MYSTERY",
-      "body": "Gioco MYSTERY dalla mano. Pesco un’altra MYSTERY: la gioco e pesco ancora. Se la terza carta è un 3, incremento il totale di 3. Reintegro poi una sola carta nella mano, perché dalla mano era uscita soltanto la prima MYSTERY."
+      "title": "Il giocatore successivo",
+      "body": "Il giocatore (B), che è temporaneamente fermo per effetto della carta MISSION TO THE MOON, si trova tra il giocatore (A) e il giocatore (C). L'astronauta (A) gioca una carta DOUBLE (S, +1, +2). L'effetto di questa giocata, supponendo che il senso di gioco sia (A)->(B)->(C), viene applicato al giocatore (C), in quanto (B) si trova in missione."
     },
     {
       "title": "Carta non giocabile pescata con MYSTERY",
       "body": "Con totale 8, MYSTERY rivela MINUS 10. MINUS 10 non è utilizzabile: la deposito con le carte giocate senza effetto e pesco ancora, fino a trovare una carta valida."
     },
-    {
-      "title": "DOUBLE seguita da MYSTERY",
-      "body": "B deve giocare due carte. Come prima usa MYSTERY e ne risolve l’effetto: la carta pescata è aggiuntiva e non conta come seconda carta della DOUBLE. Se B resta in partita, gioca la seconda carta dalla mano e poi ripristina la mano a cinque."
-    },
-    {
-      "title": "DOUBLE seguita da MISSION TO THE MOON",
-      "body": "B deve giocare due carte, ma come prima usa MISSION TO THE MOON (o la rivela attraverso MYSTERY). Non deve giocare la seconda carta: ripristina la mano e salterà il proprio prossimo turno."
-    },
-    {
-      "title": "LAST CALL seguita da TRAP",
-      "body": "A gioca LAST CALL e prende casualmente TRAP dalla mano di B. Prima dello scambio A e B riportano le rispettive mani a cinque carte, pescando nell’ordine A poi B. A sceglie il destinatario di TRAP ed effettua lo scambio."
-    },
-    {
-      "title": "I DECIDE e REVERSE",
-      "body": "Durante una DOUBLE, B usa I DECIDE WHAT’S NEXT e designa C, scegliendo il senso orario. Come seconda carta gioca REVERSE. C rimane il prossimo giocatore, ma il senso di gioco diventa antiorario."
-    }
   ],
   "variants": [
     "Prima della partita, i partecipanti possono concordare una diversa modalità di aggiornamento del totale dopo ogni eliminazione.",
@@ -265,7 +245,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 2,
       "category": "Speciale",
       "effect": "Sottrae 10 al totale.",
-      "details": "• Può essere giocata soltanto se il totale è almeno 10.\n• Se viene pescata per effetto di una MYSTERY quando il totale è inferiore a 10, viene scartata come non utilizzabile.",
+      "details": "• Può essere giocata soltanto se il totale è almeno 10.\n• Se viene pescata per effetto di una MYSTERY quando il totale è inferiore a 10 (dieci), viene scartata come non utilizzabile.",
       "image": "assets/carte/minus-10.webp"
     },
     {
@@ -274,7 +254,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 2,
       "category": "Speciale",
       "effect": "Il prossimo giocatore deve giocare due carte. Il totale resta invariato.",
-      "details": "• Di norma, il giocatore successivo (B) deve giocare entrambe le carte scegliendole dalla sua mano, senza pescate di reintegro tra la prima e la seconda.\n• Se una delle carte giocate è TRAP o SHUFFLE, l'effetto di quest'ultima viene applicato prima della rispettiva giocata.\n• Se una delle due carte giocate è di tipo DOUBLE (S, +1, +2), l'effetto di quest'ultima viene applicato al giocatore successivo.\n• Se entrambe le carte giocate sono di tipo DOUBLE (S, +1, +2) gli effetti vengono applicati sul totale ma non sul giocatore successivo, che deve giocare soltanto 2 (due) carte.\n• Se la prima carta giocata è MISSION TO THE MOON, quest'ultima interrompe l’obbligo residuo di giocare una seconda carta.\n• Se la prima carta giocata è LAST CALL, quest'ultima si attiva e, qualora il suo effetto non comporti l'eliminazione, la giocata della seconda carta residua deve essere effettuata.",
+      "details": "• Di norma, il giocatore successivo (B) deve giocare entrambe le carte scegliendole dalla sua mano, senza pescate di reintegro tra la prima e la seconda.\n• Se una delle due carte giocate è TRAP o SHUFFLE, l'effetto di quest'ultima viene applicato prima della rispettiva giocata.\n• Se una delle due carte giocate è di tipo DOUBLE (S, +1, +2), l'effetto di quest'ultima viene applicato al giocatore successivo.\n• Se entrambe le carte giocate sono di tipo DOUBLE (S, +1, +2) gli effetti vengono applicati sul totale ma non sul giocatore successivo, che deve giocare soltanto 2 (due) carte.\n• Se la prima carta giocata è MISSION TO THE MOON, quest'ultima interrompe l’obbligo residuo di giocare una seconda carta.\n• Se la prima carta giocata è LAST CALL, quest'ultima si attiva e, qualora il suo effetto non comporti l'eliminazione, la giocata della seconda carta residua deve essere effettuata.",
       "image": "assets/carte/double-simple.webp"
     },
     {
@@ -301,7 +281,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 1,
       "category": "Speciale",
       "effect": "Sottrae 23 al totale.",
-      "details": "Può essere giocata soltanto quando il totale è maggiore o uguale a 23 (ventitré).",
+      "details": "• Può essere giocata soltanto quando il totale è maggiore o uguale a 23 (ventitré).\n• Se viene pescata per effetto di una MYSTERY quando il totale è inferiore a 23 (ventitré), viene scartata come non utilizzabile.",
       "image": "assets/carte/cocoa-minus.webp"
     },
     {
@@ -345,7 +325,7 @@ window.NUMBER_TRAP_DATA = {
       "name": "MISSION TO THE MOON",
       "count": 1,
       "category": "Speciale",
-      "effect": "Fa saltare al giocatore (A) il proprio turno successivo.",
+      "effect": "Fa saltare al giocatore (A) il proprio turno, non incrementando il totale, e anche quello successivo.",
       "details": "• Il giocatore (A) che gioca questa carta prima pesca tante carte fino ad averne (cinque) in mano, dopodiché salterà il proprio turno successivo.\n• Se (A) era soggetto all’effetto di una DOUBLE (S, +1, +2), questa carta prevale e interrompe le eventuali giocate residue.",
       "image": "assets/carte/mission.webp"
     },
@@ -355,7 +335,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 1,
       "category": "Speciale",
       "effect": "Permette di prelevare a caso una carta dalla mano di un avversario e giocarla immediatamente.",
-      "details": "• Si può usare soltanto con totale maggiore o uguale a 46 (quarantasei).\n• La carta prelevata dalla mano di un avversario (B) si considera come giocata da (A), che ha giocato questa carta.\n• La carta può essere scelta anche dalla mano di un giocatore fermo temporaneamente per fetto di MISSION TO THE MOON.",
+      "details": "• Si può usare soltanto con totale maggiore o uguale a 46 (quarantasei).\n• La carta prelevata dalla mano di un avversario (B) si considera come giocata da (A), che ha giocato questa carta.\n• La carta può essere scelta anche dalla mano di un giocatore fermo temporaneamente per effetto di MISSION TO THE MOON.",
       "image": "assets/carte/last-call.webp"
     }
   ]
