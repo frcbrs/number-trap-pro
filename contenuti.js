@@ -229,7 +229,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 3,
       "category": "Speciale",
       "effect": "Inverte il senso di gioco, senza modificare il totale.",
-      "details": "Con due giocatori rimasti equivale a una carta 0. Se viene giocata durante una DOUBLE, il cambio di direzione resta valido e si applica alla successione dei turni dopo il completamento dell’obbligo. Due REVERSE nello stesso turno annullano reciprocamente l’inversione.",
+      "details": "• Con due giocatori rimasti equivale a una carta 0.\n• Se viene giocata durante una DOUBLE, il cambio di direzione resta valido e si applica alla successione dei turni dopo il completamento dell’obbligo.\n• Due REVERSE nello stesso turno annullano reciprocamente l’inversione.",
       "image": "assets/carte/reverse.webp"
     },
     {
