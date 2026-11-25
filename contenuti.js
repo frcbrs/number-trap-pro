@@ -46,8 +46,7 @@ window.NUMBER_TRAP_DATA = {
         "Se una giocata, effettuata per errore o per distrazione, incrementa il totale oltre il valore numerico 50 (cinquanta), chi ha effettuato quella giocata viene immediatamente eliminato.",
         "Quando un giocatore dispone soltanto di carte numeriche che incrementerebbero il totale fino a superare 50 (cinquanta), ovvero quando non dispone di giocate legali, è obbligato a mostrare tutte le carte componenti la sua mano ed è eliminato. Le sue carte vanno poste nella pila delle carte, con in cima quella dal valore numerico più alto, che rappresenta la sua giocata effettiva (obbligata).",
         "Il nuovo totale si calcola con la formula: **(totale precedente + valore carta giocata) − 50**.",
-        "A titolo d'esempio, se il totale è 47 (quarantasette) e il giocatore (A), di turno, dispone delle carte numeriche 4/5/6/7/8, lo stesso deve giocare la carta 8 e il nuovo totale diventa (47 + 8) - 50 = 5.",
-        "Quando un giocatore dispone soltanto di carte numeriche che farebbero superare 50, è obbligato a giocare quella numericamente più alta ed è eliminato. La partita continua con gli astronauti rimasti.",
+        "A titolo d'esempio, se il totale è 47 (quarantasette) e il giocatore (A), di turno, dispone delle carte numeriche 4/5/6/7/8, lo stesso deve giocare la carta 8 e il nuovo totale diventa (47 + 8) - 50 = 5."
       ]
     },
     {
