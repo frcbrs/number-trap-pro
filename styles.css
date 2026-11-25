@@ -302,3 +302,9 @@
   grid-column: auto;
   grid-row: auto;
 }
+
+
+/* Elenchi puntati nei chiarimenti delle carte */
+#dialog-description {
+  white-space: pre-line;
+}
