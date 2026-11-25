@@ -237,8 +237,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "RESET",
       "count": 1,
       "category": "Speciale",
-      "effect": "Riporta immediatamente il totale a 0.",
-      "details": "Può essere utilizzata per azzerare il totale durante la partita.",
+      "effect": "Azzera il totale.",
+      "details": "Carta speciale: riporta il totale a 0.",
       "image": "assets/carte/reset.webp"
     },
     {
@@ -247,7 +247,7 @@ window.NUMBER_TRAP_DATA = {
       "count": 2,
       "category": "Speciale",
       "effect": "Fa pescare e giocare subito la prima carta del mazzo.",
-      "details": "La carta pescata viene attivata integralmente, anche se speciale. Se viene pescata un’altra MYSTERY, si pesca e gioca un’ulteriore carta. Se la carta pescata non è utilizzabile per i suoi requisiti, viene collocata con le carte giocate senza effetto e si continua a pescare fino a trovare una carta utilizzabile. Le carte pescate e giocate direttamente non entrano nella mano.",
+      "details": "• La carta pescata viene, di norma, attivata immediatamente.\n• Se la carta pescata è speciale e non utilizzabile per i suoi requisiti, viene scartata nella pila delle carte giocate senza applicare il suo effetto e si continua a pescare fino alla prima carta utilizzabile.\n• Si possono concatenare due MISTERY consecutivamente.",
       "image": "assets/carte/mystery.webp"
     },
     {
@@ -255,8 +255,8 @@ window.NUMBER_TRAP_DATA = {
       "name": "TRAP",
       "count": 1,
       "category": "Speciale",
-      "effect": "Permette di scambiare tutte le carte della propria mano con quelle di un altro giocatore.",
-      "details": "Prima dello scambio, entrambi i giocatori devono avere cinque carte; chi attiva TRAP pesca quanto necessario e, se serve, anche l’avversario reintegra la propria mano. Durante una DOUBLE, se TRAP è la prima carta, la seconda viene scelta dalla nuova mano. Può coinvolgere anche un giocatore che deve saltare il turno per MISSION TO THE MOON.",
+      "effect": "Permette di scambiare tutta la propria mano con quella di un altro giocatore.",
+      "details": "• Entrambi i giocatori devono avere 5 (cinque) carte prima dello scambio.\n• Chi attiva TRAP pesca quanto necessario prima dello scambio.\n• Durante una DOUBLE, se TRAP è la prima carta, la seconda deve essere scelta dalla nuova mano.\n• Può coinvolgere anche un giocatore che deve saltare il turno per MISSION TO THE MOON.",
       "image": "assets/carte/trap.webp"
     },
     {
