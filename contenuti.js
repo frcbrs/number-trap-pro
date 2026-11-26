@@ -101,7 +101,7 @@ window.NUMBER_TRAP_DATA = {
   "examples": [
     {
       "title": "Il giocatore successivo",
-      "body": "Il giocatore (B), che è temporaneamente fermo per effetto della carta MISSION TO THE MOON, si trova tra il giocatore (A) e il giocatore (C). L'astronauta (A) gioca una carta DOUBLE (S, +1, +2). L'effetto di questa giocata, supponendo che il senso di gioco sia (A)->(B)->(C), viene applicato al giocatore (C), in quanto (B) si trova in missione."
+      "body": "Si supponga che il senso di gioco sia (A)->(B)->(C). Il giocatore (B) è temporaneamente fermo per effetto della carta MISSION TO THE MOON, da lui giocata nel proprio turno precedente. L'astronauta (A) gioca una carta DOUBLE (S, +1, +2). L'effetto di questa giocata viene applicato al giocatore (C), in quanto (B) si trova in missione."
     },
     {
       "title": "MYSTERY che rivela una carta non giocabile",
