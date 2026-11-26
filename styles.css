@@ -428,7 +428,7 @@ button:focus-visible,a:focus-visible,input:focus-visible {
   box-shadow: 0 3px 9px rgba(9,15,65,.08);
 }
 .search-field {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 8px;
   background: #fff;
@@ -1291,7 +1291,7 @@ dialog::backdrop {
 /* Le miniature vengono mostrate integralmente, senza tagli o crop.
    Dimensioni contenute e massimo cinque colonne su desktop. */
 .cards-grid {
-  grid-template-columns: repeat(5,minmax(0,154px));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   justify-content: start;
   gap: 24px 24px;
 }
@@ -1316,7 +1316,7 @@ dialog::backdrop {
 }
 @media (max-width:950px) {
   .cards-grid {
-    grid-template-columns: repeat(4,minmax(0,148px));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
   }
 }
