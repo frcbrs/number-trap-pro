@@ -204,33 +204,6 @@ window.NUMBER_TRAP_DATA = {
       "image": "assets/carte/9.webp"
     },
     {
-      "id": "reverse",
-      "name": "REVERSE",
-      "count": 3,
-      "category": "Speciale",
-      "effect": "Inverte il senso di gioco.",
-      "details": "• Con due giocatori rimasti equivale a una carta 0.\n• Se viene giocata durante una DOUBLE, il cambio di direzione resta valido e si applica alla successione dei turni dopo il completamento dell’obbligo.\n• Due REVERSE nello stesso turno annullano reciprocamente l’inversione.",
-      "image": "assets/carte/reverse.webp"
-    },
-    {
-      "id": "reset",
-      "name": "RESET",
-      "count": 1,
-      "category": "Speciale",
-      "effect": "Azzera il totale.",
-      "details": "Carta speciale: riporta il totale a 0.",
-      "image": "assets/carte/reset.webp"
-    },
-    {
-      "id": "mystery",
-      "name": "MYSTERY",
-      "count": 2,
-      "category": "Speciale",
-      "effect": "Fa pescare e giocare subito la prima carta del mazzo.",
-      "details": "• La carta pescata viene, di norma, attivata immediatamente.\n• Se la carta pescata è speciale e non utilizzabile per i suoi requisiti, viene scartata nella pila delle carte giocate senza applicare il suo effetto e si continua a pescare fino alla prima carta utilizzabile.\n• Si possono concatenare due MISTERY consecutivamente.",
-      "image": "assets/carte/mystery.webp"
-    },
-    {
       "id": "trap",
       "name": "TRAP",
       "count": 1,
@@ -238,15 +211,6 @@ window.NUMBER_TRAP_DATA = {
       "effect": "Permette di scambiare tutta la propria mano con quella di un altro giocatore.",
       "details": "• Entrambi i giocatori devono avere 5 (cinque) carte prima dello scambio.\n• Chi attiva TRAP pesca quanto necessario prima dello scambio.\n• Durante una DOUBLE, se TRAP è la prima carta, la seconda deve essere scelta dalla nuova mano.\n• Può coinvolgere anche un giocatore che deve saltare il turno per MISSION TO THE MOON.",
       "image": "assets/carte/trap.webp"
-    },
-    {
-      "id": "minus-10",
-      "name": "MINUS 10",
-      "count": 2,
-      "category": "Speciale",
-      "effect": "Sottrae 10 al totale.",
-      "details": "• Può essere giocata soltanto se il totale è almeno 10.\n• Se viene pescata per effetto di una MYSTERY quando il totale è inferiore a 10 (dieci), viene scartata come non utilizzabile.",
-      "image": "assets/carte/minus-10.webp"
     },
     {
       "id": "double-simple",
@@ -276,6 +240,42 @@ window.NUMBER_TRAP_DATA = {
       "image": "assets/carte/double-plus-2.webp"
     },
     {
+      "id": "mystery",
+      "name": "MYSTERY",
+      "count": 2,
+      "category": "Speciale",
+      "effect": "Fa pescare e giocare subito la prima carta del mazzo.",
+      "details": "• La carta pescata viene, di norma, attivata immediatamente.\n• Se la carta pescata è speciale e non utilizzabile per i suoi requisiti, viene scartata nella pila delle carte giocate senza applicare il suo effetto e si continua a pescare fino alla prima carta utilizzabile.\n• Si possono concatenare due MISTERY consecutivamente.",
+      "image": "assets/carte/mystery.webp"
+    },
+    {
+      "id": "shuffle",
+      "name": "SHUFFLE",
+      "count": 1,
+      "category": "Speciale",
+      "effect": "Raccoglie, mescola e ridistribuisce le mani dei giocatori in partita.",
+      "details": "• Prima della mescolata tutti i giocatori ancora in partita devono avere 5 (cinque) carte in mano.\n• Il giocatore che gioca questa carta pesca dapprima quanto necessario, poi raduna tutte le carte in mano agli avversari (comprese le sue) e le mescola. Dopodiché il giocatore alla sua sinistra effettuerà il taglio del mazzo e le carte verranno distribuite una per astronauta a partire dal giocatore successivo nel senso di gioco corrente.\n• Le carte in mano al giocatore temporaneamente fermo per effetto di MISSION TO THE MOON sono comprese.",
+      "image": "assets/carte/shuffle.webp"
+    },
+    {
+      "id": "reverse",
+      "name": "REVERSE",
+      "count": 3,
+      "category": "Speciale",
+      "effect": "Inverte il senso di gioco.",
+      "details": "• Con due giocatori rimasti equivale a una carta 0.\n• Se viene giocata durante una DOUBLE, il cambio di direzione resta valido e si applica alla successione dei turni dopo il completamento dell’obbligo.\n• Due REVERSE nello stesso turno annullano reciprocamente l’inversione.",
+      "image": "assets/carte/reverse.webp"
+    },
+    {
+      "id": "minus-10",
+      "name": "MINUS 10",
+      "count": 2,
+      "category": "Speciale",
+      "effect": "Sottrae 10 al totale.",
+      "details": "• Può essere giocata soltanto se il totale è almeno 10.\n• Se viene pescata per effetto di una MYSTERY quando il totale è inferiore a 10 (dieci), viene scartata come non utilizzabile.",
+      "image": "assets/carte/minus-10.webp"
+    },
+    {
       "id": "cocoa-minus",
       "name": "COCOA MINUS",
       "count": 1,
@@ -294,6 +294,15 @@ window.NUMBER_TRAP_DATA = {
       "image": "assets/carte/cocoa-start.webp"
     },
     {
+      "id": "reset",
+      "name": "RESET",
+      "count": 1,
+      "category": "Speciale",
+      "effect": "Azzera il totale.",
+      "details": "Carta speciale: riporta il totale a 0.",
+      "image": "assets/carte/reset.webp"
+    },
+    {
       "id": "ten-plus-minus",
       "name": "TEN PLUS-MINUS",
       "count": 1,
@@ -303,24 +312,6 @@ window.NUMBER_TRAP_DATA = {
       "image": "assets/carte/ten-plus-minus.webp"
     },
     {
-      "id": "i-decide",
-      "name": "I DECIDE WHAT’S NEXT",
-      "count": 1,
-      "category": "Speciale",
-      "effect": "Permette di scegliere il prossimo giocatore, il senso di gioco e un incremento da 0 (zero) a 5 (cinque).",
-      "details": "• È consentito scegliere sé stessi come giocatore successivo.\n• Non è consentito scegliere come giocatore successivo un astronauta che deve saltare un turno per l'effetto di MISSION TO THE MOON.\n• Qualora questa carta sia giocata come prima di una DOUBLE (S, +1, +2), un successivo REVERSE cambia il senso di gioco ma non annulla la scelta del prossimo giocatore.",
-      "image": "assets/carte/i-decide.webp"
-    },
-    {
-      "id": "shuffle",
-      "name": "SHUFFLE",
-      "count": 1,
-      "category": "Speciale",
-      "effect": "Raccoglie, mescola e ridistribuisce le mani dei giocatori in partita.",
-      "details": "• Prima della mescolata tutti i giocatori ancora in partita devono avere 5 (cinque) carte in mano.\n• Il giocatore che gioca questa carta pesca dapprima quanto necessario, poi raduna tutte le carte in mano agli avversari (comprese le sue) e le mescola. Dopodiché il giocatore alla sua sinistra effettuerà il taglio del mazzo e le carte verranno distribuite una per astronauta a partire dal giocatore successivo nel senso di gioco corrente.\n• Le carte in mano al giocatore temporaneamente fermo per effetto di MISSION TO THE MOON sono comprese.",
-      "image": "assets/carte/shuffle.webp"
-    },
-    {
       "id": "mission",
       "name": "MISSION TO THE MOON",
       "count": 1,
@@ -328,6 +319,15 @@ window.NUMBER_TRAP_DATA = {
       "effect": "Fa saltare al giocatore (A) il proprio turno, non incrementando il totale, e anche quello successivo.",
       "details": "• Il giocatore (A) che gioca questa carta prima pesca tante carte fino ad averne (cinque) in mano, dopodiché salterà il proprio turno successivo.\n• Se (A) era soggetto all’effetto di una DOUBLE (S, +1, +2), questa carta prevale e interrompe le eventuali giocate residue.",
       "image": "assets/carte/mission.webp"
+    },
+    {
+      "id": "i-decide",
+      "name": "I DECIDE WHAT’S NEXT",
+      "count": 1,
+      "category": "Speciale",
+      "effect": "Permette di scegliere il prossimo giocatore, il senso di gioco e un incremento da 0 (zero) a 5 (cinque).",
+      "details": "• È consentito scegliere sé stessi come giocatore successivo.\n• Non è consentito scegliere come giocatore successivo un astronauta che deve saltare un turno per l'effetto di MISSION TO THE MOON.\n• Qualora questa carta sia giocata come prima di una DOUBLE (S, +1, +2), un successivo REVERSE cambia il senso di gioco ma non annulla la scelta del prossimo giocatore.",
+      "image": "assets/carte/i-decide.webp"
     },
     {
       "id": "last-call",
