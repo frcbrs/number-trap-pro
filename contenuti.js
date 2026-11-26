@@ -84,14 +84,6 @@ window.NUMBER_TRAP_DATA = {
     {
       "title": "MYSTERY che rivela una carta non giocabile",
       "text": "Il totale è pari a 8 (otto). L'astronauta (A) gioca la carta MYSTERY e pesca la prima carta del mazzo, che deve immediatamente giocare. Questa carta è MINUS 10 (ad esempio), non utilizzabile in questo momento della partita, poiché richiede che il totale sia maggiore o uguale a 10 (dieci). Pertanto, la carta MINUS 10 va depositata con le carte già giocate, senza applicarne l'effetto, e il giocatore (A) deve ripetere il procedimento, considerandosi non ancora completato l'effetto della MISTERY."
-    },
-    {
-      "title": "Direzione di gioco e scelta del prossimo giocatore",
-      "text": "REVERSE cambia il senso di gioco; due REVERSE giocati nello stesso turno si annullano. I DECIDE WHAT’S NEXT può designare un giocatore specifico e fissare la direzione: un successivo REVERSE cambia la direzione ma non sostituisce il giocatore già designato. Se quel giocatore è chi ha giocato I DECIDE e successivamente gioca MISSION TO THE MOON, il turno che si era attribuito viene saltato e si prosegue nella direzione scelta."
-    },
-    {
-      "title": "Eliminazione durante una sequenza",
-      "text": "Se il totale supera 50 durante una giocata multipla o una catena di effetti, il giocatore viene eliminato subito e non completa le azioni che gli restavano da svolgere. Le conseguenze di carte già giocate, come l’inversione di REVERSE o il vincolo di una DOUBLE, continuano ad applicarsi ai turni successivi."
     }
   ],
   "examples": [
