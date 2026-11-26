@@ -104,8 +104,8 @@ window.NUMBER_TRAP_DATA = {
       "body": "Il giocatore (B), che è temporaneamente fermo per effetto della carta MISSION TO THE MOON, si trova tra il giocatore (A) e il giocatore (C). L'astronauta (A) gioca una carta DOUBLE (S, +1, +2). L'effetto di questa giocata, supponendo che il senso di gioco sia (A)->(B)->(C), viene applicato al giocatore (C), in quanto (B) si trova in missione."
     },
     {
-      "title": "Carta non giocabile pescata con MYSTERY",
-      "body": "Con totale 8, MYSTERY rivela MINUS 10. MINUS 10 non è utilizzabile: la deposito con le carte giocate senza effetto e pesco ancora, fino a trovare una carta valida."
+      "title": "MYSTERY che rivela una carta non giocabile",
+      "body": "Il totale è pari a 8 (otto). L'astronauta (A) gioca la carta MYSTERY e pesca la prima carta del mazzo, che deve immediatamente giocare. Questa carta è MINUS 10 (ad esempio), non utilizzabile in questo momento della partita, poiché richiede che il totale sia maggiore o uguale a 10 (dieci). Pertanto, la carta MINUS 10 va depositata con le carte già giocate, senza applicarne l'effetto, e il giocatore (A) deve ripetere il procedimento, considerandosi non ancora completato l'effetto della MISTERY."
     },
   ],
   "variants": [
