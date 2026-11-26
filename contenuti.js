@@ -2,9 +2,9 @@
 window.NUMBER_TRAP_DATA = {
   "game": "NUMBER TRAP PRO",
   "subtitle": "Designed by FRCBRS",
-  "edition": "Bozza 1 · 24 novembre 2026",
-  "status": "Bozza di revisione editoriale delle regole: da verificare prima di considerarla una versione ufficiale definitiva.",
-  "intro": "Un gioco di carte per 2–8 astronauti: tieni il totale entro 50, sfrutta le carte speciali e rimani l’ultimo giocatore in partita.",
+  "edition": "Versione 1.0",
+  "status": "Published",
+  "intro": "",
   "sections": [
     {
       "id": "scopo",
@@ -17,7 +17,7 @@ window.NUMBER_TRAP_DATA = {
       "id": "partecipanti",
       "title": "Partecipanti",
       "paragraphs": [
-        "Il numero consigliato è di 5/6 giocatori. Tuttavia, è possibile giocare da un minimo di 2 fino ad un massimo di 8 persone."
+        "Il numero consigliato è di 5/6 astronauti. Tuttavia, è possibile giocare da un minimo di 2 fino ad un massimo di 8 persone."
       ]
     },
     {
