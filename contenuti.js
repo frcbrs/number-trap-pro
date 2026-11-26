@@ -82,12 +82,8 @@ window.NUMBER_TRAP_DATA = {
       "text": "Un giocatore (A) temporaneamente fermo per effetto della carta MISSION TO THE MOON non può essere scelto come giocatore successivo da chi gioca la carta I DECIDE WHAT’S NEXT e viene saltato nella normale successione dei turni. Risulta trasparente all'effetto di una DOUBLE (S, +1, +2), che passa oltre. Le carte di (A) rimangono però disponibili per giocate di tipo SHUFFLE, TRAP e LAST CALL."
     },
     {
-      "title": "TRAP, SHUFFLE e cambio di mano durante DOUBLE",
-      "text": "Se la prima carta di un turno DOUBLE è TRAP o SHUFFLE, l’effetto si completa, incluse le pescate necessarie, e la seconda carta viene scelta dalla nuova mano. Se TRAP o SHUFFLE sono la seconda giocata, si ripristina comunque la mano a cinque prima dello scambio o della mescolata."
-    },
-    {
-      "title": "LAST CALL e scelte del giocatore",
-      "text": "La carta prelevata dalla mano di un avversario attraverso LAST CALL si considera giocata da chi ha attivato LAST CALL. È quindi quest’ultimo a effettuare le scelte richieste da carte come I DECIDE WHAT’S NEXT, TRAP o TEN PLUS-MINUS. Se la carta estratta è MYSTERY, ne viene risolto l’effetto come di consueto. Nel caso LAST CALL + TRAP o LAST CALL + SHUFFLE, le mani vengono ripristinate a cinque prima dello scambio o della mescolata, pescando prima il giocatore che ha attivato LAST CALL e poi l’altro giocatore coinvolto."
+      "title": "MYSTERY che rivela una carta non giocabile",
+      "text": "Il totale è pari a 8 (otto). L'astronauta (A) gioca la carta MYSTERY e pesca la prima carta del mazzo, che deve immediatamente giocare. Questa carta è MINUS 10 (ad esempio), non utilizzabile in questo momento della partita, poiché richiede che il totale sia maggiore o uguale a 10 (dieci). Pertanto, la carta MINUS 10 va depositata con le carte già giocate, senza applicarne l'effetto, e il giocatore (A) deve ripetere il procedimento, considerandosi non ancora completato l'effetto della MISTERY."
     },
     {
       "title": "Direzione di gioco e scelta del prossimo giocatore",
@@ -102,10 +98,6 @@ window.NUMBER_TRAP_DATA = {
     {
       "title": "Il giocatore successivo",
       "body": "Si supponga che il senso di gioco sia (A)->(B)->(C). Il giocatore (B) è temporaneamente fermo per effetto della carta MISSION TO THE MOON, da lui giocata nel proprio turno precedente. L'astronauta (A) gioca una carta DOUBLE (S, +1, +2). L'effetto di questa giocata viene applicato al giocatore (C), in quanto (B) si trova in missione."
-    },
-    {
-      "title": "MYSTERY che rivela una carta non giocabile",
-      "body": "Il totale è pari a 8 (otto). L'astronauta (A) gioca la carta MYSTERY e pesca la prima carta del mazzo, che deve immediatamente giocare. Questa carta è MINUS 10 (ad esempio), non utilizzabile in questo momento della partita, poiché richiede che il totale sia maggiore o uguale a 10 (dieci). Pertanto, la carta MINUS 10 va depositata con le carte già giocate, senza applicarne l'effetto, e il giocatore (A) deve ripetere il procedimento, considerandosi non ancora completato l'effetto della MISTERY."
     },
   ],
   "variants": [
