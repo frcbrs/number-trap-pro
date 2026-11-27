@@ -638,7 +638,8 @@ button:focus-visible,a:focus-visible,input:focus-visible {
   max-width: 1120px;
 }
 .variant {
-  padding: 15px 0;
+  margin: 0;
+  padding: 8px 0;
   border-bottom: 1px solid #e2e4ef;
   color: #45506b;
   font-size: 14px;
