@@ -93,8 +93,8 @@ window.NUMBER_TRAP_DATA = {
     },
   ],
   "variants": [
-    "Prima della partita, i partecipanti possono concordare una diversa modalità di aggiornamento del totale dopo ogni eliminazione.",
-    "Come variante, le carte speciali possono essere rimosse dalla pila delle carte giocate e quindi non tornare nel mazzo quando viene ricostituito."
+    "• Prima della partita, i partecipanti possono concordare una diversa modalità di aggiornamento del totale dopo ogni eliminazione.",
+    "• Le carte speciali, dopo un certo numero di ricostituzioni del mazzo (da decidere tramite accordo tra i giocatori), possono essere rimosse dalla pila delle carte giocate e quindi essere momentaneamente escluse per accelerare la conclusione della partita."
   ],
   "cards": [
     {
